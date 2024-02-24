@@ -17,6 +17,8 @@ app.use(cors())
 
 app.use('/', routes)
 
+console.log('')
+
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerOutput))
 
 export { app }
