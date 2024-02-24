@@ -1,17 +1,18 @@
-import type {
-  DiscountProductsCart,
-  Product,
-} from '../../../services/cartService/cart.interface'
-
-export type IResponseDTO = DiscountProductsCart
-
-export type ProductCartDTO = Product
-
-export interface IFinalProduct {
+export interface DiscountProductCartDTO {
   name: string
-  price: number
+  price: string
   sku: string
-  discountPrice?: number
+  discountPrice: string
+}
+
+export interface ProductCartDTO {
+  name: string
+  price: string
+  sku: string
+}
+export interface IResponseDTO {
+  lineItems: ProductCartDTO[]
+  totalDiscountCart: number
 }
 
 export interface IRequestDTO {
