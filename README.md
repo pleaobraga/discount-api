@@ -32,7 +32,8 @@ To launch the development server, execute:
 npm run dev
 ```
 
-This command initializes the server and automatically opens a new browser tab to the project.
+
+This command initializes the server and automatically opens a new browser tab to the project in the **port 8000**.
 
 #### API Documentation
 
