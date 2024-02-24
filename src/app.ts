@@ -15,9 +15,7 @@ app.use(express.static('public'))
 
 app.use(cors())
 
-app.use('/', () => {
-  console.log('running')
-})
+app.use('/', routes)
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerOutput))
 
