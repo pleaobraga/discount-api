@@ -22,7 +22,11 @@ export const requestBodyValidation = z.object({
               required_error: 'cart.lineItems[].price  is required',
             })
             .trim()
-            .min(1, 'cart.lineItems[].price cannot be empty'),
+            .min(1, 'cart.lineItems[].price cannot be empty')
+            .refine(
+              (s) => !s.includes('-'),
+              'cart.lineItems[].price cannot be negative'
+            ),
           sku: z
             .string({
               required_error: 'cart.lineItems[].sku is required',
