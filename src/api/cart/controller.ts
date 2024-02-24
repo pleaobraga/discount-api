@@ -13,8 +13,6 @@ export class ApplyDiscountCartController {
     try {
       const { cart } = request.body
 
-      // validar o request.body com o zod
-
       const discountList = this.applyCartDiscount(cart.lineItems)
 
       return response.status(200).json(discountList)
