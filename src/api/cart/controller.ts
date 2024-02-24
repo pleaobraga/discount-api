@@ -16,7 +16,7 @@ export class ApplyDiscountCartController {
 
       const discountList = this.applyCartDiscount(cart.lineItems)
 
-      const answerDTO = responseAdapter(discountList)
+      const answerDTO = responseAdapter(discountList, cart.reference)
 
       return response.status(200).json(answerDTO)
     } catch (e: any) {

@@ -11,8 +11,11 @@ export interface ProductCartDTO {
   sku: string
 }
 export interface IResponseDTO {
-  lineItems: ProductCartDTO[]
-  totalDiscountCart: number
+  cart: {
+    reference: string
+    lineItems: ProductCartDTO[]
+    totalDiscountCart: number
+  }
 }
 
 export interface IRequestDTO {

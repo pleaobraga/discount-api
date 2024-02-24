@@ -2,7 +2,8 @@ import { type DiscountProductsCart } from '../../services/cartService/cart.inter
 import { type IResponseDTO } from './dto/dto.interface'
 
 export function responseAdapter(
-  discountProductsCart: DiscountProductsCart
+  discountProductsCart: DiscountProductsCart,
+  cartReference: string
 ): IResponseDTO {
   const { lineItems, totalDiscountCart } = discountProductsCart
 
@@ -12,5 +13,11 @@ export function responseAdapter(
     discountPrice: String(item.discountPrice),
   }))
 
-  return { lineItems: parsedLineItems, totalDiscountCart }
+  return {
+    cart: {
+      reference: cartReference,
+      lineItems: parsedLineItems,
+      totalDiscountCart,
+    },
+  }
 }
