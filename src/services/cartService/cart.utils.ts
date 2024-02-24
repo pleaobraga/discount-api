@@ -1,4 +1,4 @@
-import { AppError } from '../../errors/AppErrors'
+import { AppError } from '../../errors/appErrors'
 import { parseFixedNumber } from '../../helper/parse'
 import {
   type DiscountProductsCart,
