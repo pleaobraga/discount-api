@@ -16,7 +16,7 @@ export const cartDiscountStrategy: IGenerateCardDicountStategy = ({
   eligibleSkus,
   prerequisiteSkus,
 }) => {
-  const applyCartDiscount: IApplyCartDiscount = ({ lineItems }) => {
+  const applyCartDiscount: IApplyCartDiscount = (lineItems) => {
     const listWithDiscount = createListWithDiscount(lineItems)
 
     if (!cartHasDiscount(prerequisiteSkus, listWithDiscount)) {

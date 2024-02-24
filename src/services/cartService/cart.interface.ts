@@ -18,11 +18,7 @@ export interface DiscountProductsCart {
   totalDiscountCart: number
 }
 
-export interface RawCart {
-  lineItems: Product[]
-}
-
-export type IApplyCartDiscount = (props: RawCart) => DiscountProductsCart
+export type IApplyCartDiscount = (lineItems: Product[]) => DiscountProductsCart
 
 export type IGenerateCardDicountStategy = (
   props: IDiscount
