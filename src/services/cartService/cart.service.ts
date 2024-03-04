@@ -32,6 +32,7 @@ export const cartDiscountStrategy: IGenerateCardDicountStategy = ({
 
     const itemWithDiscount = applyDiscountItem(item, applyDiscount)
 
+    // CON: Rename variable to listWithDiscountApplied
     const listWithDiscountApplyed = updateListItem({
       indexItem,
       itemWithDiscount,

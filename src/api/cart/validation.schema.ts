@@ -1,5 +1,7 @@
 import { z } from 'zod'
 
+// PRO: schema validations
+
 export const requestBodyValidation = z.object({
   body: z.object({
     cart: z.object({

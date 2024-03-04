@@ -1,3 +1,5 @@
+<!-- PRO: Great docs! -->
+
 # Discount API Documentation
 
 Welcome to the Discount API, a Node.js and Express-based solution designed to apply discounts to shopping carts. Utilizing TypeScript, this API is built with modern development practices and integrates leading libraries for optimal performance and ease of maintenance.

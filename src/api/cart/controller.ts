@@ -4,6 +4,7 @@ import type { IRequestDTO, IResponseDTO } from './dto/dto.interface'
 import { type IApplyCartDiscount } from '../../services/cartService/cart.interface'
 import { responseAdapter } from './hellpers'
 
+// PRO: Clean controller.
 export class ApplyDiscountCartController {
   constructor(private readonly applyCartDiscount: IApplyCartDiscount) {}
 
