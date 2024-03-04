@@ -1,3 +1,5 @@
+// PRO: Nice API docs!
+
 import swaggerAutogen from 'swagger-autogen'
 
 const doc = {

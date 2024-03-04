@@ -1,3 +1,5 @@
+// PRO: Nice tests! Losts of cases convered which is great.
+//
 import { AppError } from '../../../errors/appErrors'
 
 import {

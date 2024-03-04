@@ -1,3 +1,4 @@
+// PRO: Tests even for small functions
 import { parseFixedNumber } from '../parse'
 
 describe('Testing Parse', () => {
